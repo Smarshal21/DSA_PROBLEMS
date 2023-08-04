@@ -11,13 +11,13 @@ public:
             long long sqrtele = sqrt(maxelement);
             maxh.push(sqrtele);
         }
-         long long ans = 0;
+         long long sum = 0;
         while(maxh.size()>0){
            
-            ans = ans+maxh.top();
+            sum = sum+maxh.top();
             maxh.pop();
         }
-        return ans;
+        return sum;
 
     }
 };
